@@ -1,4 +1,4 @@
-
+![ic_symmetry_logo2](https://cloud.githubusercontent.com/assets/8595514/15270092/1e9d756a-19ea-11e6-8499-40db4506a287.png)
 
 Symmetry is a Layer-based Android application that provides the creation of many different kinds of shapes, that you can either change parameters or delete, depending on your preference!
 
