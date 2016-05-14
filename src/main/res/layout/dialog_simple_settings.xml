@@ -1,0 +1,30 @@
+<!--Copyright © 2015 by Menelaos Kotsollaris -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+    <EditText
+        android:textColor="#ffffff"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:scaleType="center"
+        android:background="#353668"
+        android:contentDescription="@string/app_name"
+        android:text="@string/dialog_settings_title"
+        android:id="@+id/titleTextView_DialogSimpleSettings"/>
+    <Button
+        android:id="@+id/colorButton_dialogSimpleSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/color_picker_title"
+        android:layout_below="@+id/titleTextView_DialogSimpleSettings"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+</RelativeLayout>

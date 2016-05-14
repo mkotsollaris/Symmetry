@@ -1,0 +1,217 @@
+<!--Copyright © 2015 by Menelaos Kotsollaris -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#aaaaaa"
+    tools:context=".StartActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/scrollViewWrapper_activityDraw">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollViewWrapper_activityDraw">
+
+            <menelaos.example.com.symmetry.CustomDrawView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:id="@+id/activity_draw_customDrawView"
+                />
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#C0C0C0"
+            android:id="@+id/schemaListHorizontalView_activity_draw"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/removeButton_activityDraw"
+            android:layout_toLeftOf="@+id/removeButton_activityDraw"
+            android:layout_below="@+id/prevButton_activityDraw">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TableRow
+                    android:id="@+id/schemaListTableRow_drawActivity"
+                    >
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+
+        <ImageButton
+            android:contentDescription="@string/string_settings_contentDescription"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/settingsButton_activityDraw"
+            android:src="@drawable/ic_settings"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageButton
+            android:contentDescription="@string/string_delete_contentDescription"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/removeButton_activityDraw"
+            android:src="@drawable/ic_delete"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/settingsButton_activityDraw"
+            android:layout_toStartOf="@+id/settingsButton_activityDraw"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/pallete_horizontalScrollView_activity_draw"
+            android:background="#C0C0C0"
+            android:padding="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/showEntireViewButton_activityDraw"
+            android:layout_toStartOf="@+id/showEntireViewButton_activityDraw">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TableRow
+                    android:id="@+id/tablerow1"
+                    >
+                    <ImageButton
+                        android:contentDescription="@string/string_currColor_contentDescription"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="#ffffff"
+                        android:id="@+id/colorButton_activityDraw"/>
+
+                    <ImageButton
+                        android:contentDescription="@string/string_move_contentDescription"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/focusImageButton_activityDraw"
+                        android:src="@drawable/ic_move"
+                        />
+
+                    <ImageButton
+                        android:contentDescription="@string/string_yourGiven_contentDescription"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/userGivenImageButton_activityDraw"
+                        android:src="@drawable/ic_user_given"/>
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/circleImageButton_activityDraw"
+                        android:src="@drawable/ic_circle"/>
+
+                    <ImageButton
+                        android:contentDescription="@string/string_crookedLine_contentDescription"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/crookedLineImageButton_activityDraw"
+                        android:src="@drawable/ic_crooked_line"/>
+
+                    <ImageButton
+                        android:contentDescription="@string/string_line_contentDescription"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/lineImageButton_activityDraw"
+                        android:src="@drawable/ic_line"/>
+
+                    <ImageButton
+                        android:contentDescription="@string/string_polygon_contentDescription"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/polygonImageButton_activityDraw"
+                        android:src="@drawable/ic_polygon"/>
+
+                    <ImageButton
+                        android:contentDescription="@string/string_rectangle_contentDescription"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/rectangleImageButton_activityDraw"
+                        android:src="@drawable/ic_rectangle"/>
+
+                    <ImageButton
+                        android:contentDescription="@string/string_square_contentDescription"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/squareImageButton_activityDraw"
+                        android:src="@drawable/ic_square"/>
+
+                    <ImageButton
+                        android:contentDescription="@string/string_triangle_contentDescription"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/triangleImageButton_activityDraw"
+                        android:src="@drawable/ic_triangle"/>
+
+                    <ImageButton
+                        android:contentDescription="@string/string_background_contentDescription"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_bucket"
+                        android:id="@+id/backgroundPaintImageButton_activityDraw"
+                        />
+
+                    <ImageButton
+                        android:contentDescription="@string/string_new_contentDescription"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_new_small"
+                        android:id="@+id/newButton_activityDraw"/>
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+
+    <ImageButton
+        android:contentDescription="@string/string_moveLeft_contentDescription"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_left"
+        android:id="@+id/prevButton_activityDraw"
+        android:layout_above="@+id/removeButton_activityDraw"
+        android:layout_toLeftOf="@+id/nextButton_activityDraw"
+        android:layout_toStartOf="@+id/nextButton_activityDraw"/>
+
+    <ImageButton
+        android:contentDescription="@string/string_moveRight_contentDescription"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_right"
+        android:id="@+id/nextButton_activityDraw"
+        android:layout_above="@+id/schemaListHorizontalView_activity_draw"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:id="@+id/showEntireViewButton_activityDraw"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_hide"
+        android:contentDescription="@string/hideButton_contentDescription"
+        style="?android:attr/borderlessButtonStyle"
+        />
+</RelativeLayout>

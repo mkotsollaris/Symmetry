@@ -1,0 +1,54 @@
+<!--Copyright © 2015 by Menelaos Kotsollaris -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+    <EditText
+        android:textColor="#ffffff"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:scaleType="center"
+        android:background="#353668"
+        android:contentDescription="@string/app_name"
+        android:text="@string/dialog_settings_title"
+        android:id="@+id/titleTextView_DialogSettings"/>
+    <Button
+        android:id="@+id/colorButton_dialogSettings"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/color_picker_title"
+        android:layout_below="@+id/titleTextView_DialogSettings"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/colorButton_dialogSettings" >
+
+        <RadioButton
+            android:id="@+id/fillRadioButton_dialogSettings"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/fill" />
+
+        <RadioButton
+            android:id="@+id/radioButtonStroke_DialogSettings"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/stroke" />
+    </RadioGroup>
+</RelativeLayout>

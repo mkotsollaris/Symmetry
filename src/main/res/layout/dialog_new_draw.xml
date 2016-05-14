@@ -1,0 +1,96 @@
+<!--Copyright © 2015 by Menelaos Kotsollaris -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+    >
+    <EditText
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:scaleType="center"
+        android:textColor="#ffffff"
+        android:background="#353668"
+        android:text="@string/dialog_new_draw_title"
+        android:id="@+id/titleTextView_newDrawDialog"
+        android:inputType="number"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTextView_newDrawDialog"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:background="@android:drawable/editbox_background"
+            android:maxLength="6"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/heightEditText_newDrawDialog"
+            android:layout_below="@+id/widthStaticEditText_newDrawDialog"
+            android:layout_toRightOf="@+id/eightEditText_newDrawDialog"
+            android:layout_toEndOf="@+id/eightEditText_newDrawDialog"
+            android:inputType="number"
+            android:text="123123123"
+            android:singleLine="true"/>
+
+        <EditText
+            android:background="@android:drawable/editbox_background"
+            android:maxLength="5"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/widthEditText_newDrawDialog"
+            android:text="12312132312"
+            android:layout_above="@+id/eightEditText_newDrawDialog"
+            android:layout_toRightOf="@+id/eightEditText_newDrawDialog"
+            android:layout_toEndOf="@+id/eightEditText_newDrawDialog"
+            android:singleLine="true"
+            android:layout_alignRight="@+id/heightEditText_newDrawDialog"
+            android:layout_alignEnd="@+id/heightEditText_newDrawDialog"
+            />
+
+        <EditText
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:background="@android:drawable/editbox_background"
+            android:focusableInTouchMode="false"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:scaleType="center"
+            android:text="@string/heightEditText_newDrawDialog"
+            android:id="@+id/eightEditText_newDrawDialog"
+            android:layout_below="@+id/widthStaticEditText_newDrawDialog"
+            android:layout_alignLeft="@+id/widthStaticEditText_newDrawDialog"
+            android:layout_alignStart="@+id/widthStaticEditText_newDrawDialog"
+            android:inputType="none"
+            />
+
+        <EditText
+            android:background="@android:drawable/editbox_background"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:scaleType="center"
+            android:text="@string/widthEditText_newDrawDialog"
+            android:id="@+id/widthStaticEditText_newDrawDialog"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:inputType="none"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
